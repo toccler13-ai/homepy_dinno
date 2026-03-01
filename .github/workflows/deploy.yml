@@ -20,6 +20,7 @@ jobs:
         username: ${{ secrets.AWS_EC2_USER }}
         key: ${{ secrets.AWS_EC2_KEY }}
         script: |
+          git config --global --add safe.directory /var/www/html
           cd /var/www/html
           git pull
           # 여기에 필요한 배포 명령어를 추가하세요.
