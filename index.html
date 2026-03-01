@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINNO PARTNERS – Bring You Innovative Digital Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            background: white;
+            padding: 15px 30px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 200;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 35px;
+            width: auto;
+            display: block;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            font-size: 13px;
+            transition: color 0.3s;
+            padding: 5px 0;
+        }
+
+        nav a:hover {
+            color: #0099ff;
+        }
+
+        /* ===== IMAGE SECTIONS ===== */
+        .image-section {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .image-section:first-of-type {
+            margin-top: 70px;
+        }
+
+        .image-section img {
+            width: 75%;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #222;
+            color: #aaa;
+            padding: 50px 30px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #404040;
+            padding-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .footer-section p {
+            color: #aaa;
+            line-height: 1.8;
+            font-size: 13px;
+        }
+
+        .footer-section a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 13px;
+        }
+
+        .footer-section a:hover {
+            color: #0099ff;
+        }
+
+        .footer-bottom {
+            padding-top: 15px;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .image-section {
+                height: 50vh;
+                margin-top: 30px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <a href="#home" class="logo">
+            <img src="http://www.dinnopartners.com/wp-content/uploads/2019/12/header_logo.png" alt="DINNO PARTNERS">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#section1">Vision & Mission</a></li>
+                <li><a href="#section2">What We Do</a></li>
+                <li><a href="#section3">Our Clients</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== IMAGE SECTIONS ===== -->
+    <section id="home" class="image-section">
+        <img src="http://www.dinnopartners.com/wp-content/uploads/2019/12/1.png" alt="Home">
+    </section>
+
+    <section id="section1" class="image-section">
+        <img src="http://www.dinnopartners.com/wp-content/uploads/2019/12/3.png" alt="Vision & Mission">
+    </section>
+
+    <section id="section2" class="image-section">
+        <img src="http://www.dinnopartners.com/wp-content/uploads/2020/03/4.jpg" alt="What We Do">
+    </section>
+
+    <section id="section3" class="image-section">
+        <img src="http://www.dinnopartners.com/wp-content/uploads/2020/03/5-1.jpg" alt="Our Clients">
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About DINNO PARTNERS</h3>
+                    <p>DINNO PARTNERS is a leading digital innovation and technology consulting company dedicated to delivering cutting-edge solutions that drive business transformation and growth.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>
+                        <strong style="color: #ccc;">Address:</strong><br>
+                        3F. 37. Seolleung-ro 112-gil<br>
+                        Gangnam-gu, Seoul<br>
+                        Republic of Korea<br>
+                        <br>
+                        <a href="mailto:dinno@dinnopartners.com">dinno@dinnopartners.com</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p>
+                        <a href="#home">Home</a><br>
+                        <a href="#section1">Vision & Mission</a><br>
+                        <a href="#section2">What We Do</a><br>
+                        <a href="#section3">Our Clients</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2017 Dinno Partners Inc. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
